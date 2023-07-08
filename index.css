@@ -1,0 +1,484 @@
+:root {
+    --hovercolor: rgb(0, 204, 255);
+}
+
+
+* {
+    bottom: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    min-width: 1480px;
+    max-width: 1480px;
+    margin: auto;
+
+}
+
+.wrapper {
+    background-image: url(/bezinger/Base.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(4, 7, 26, 0.346);
+
+}
+
+nav {
+    width: 50%;
+    margin-left: -6%;
+}
+
+nav>ul {
+    /* padding-left:15%; */
+    display: flex;
+    gap: 20px;
+}
+
+nav>ul>li>a {
+    line-height: 100px;
+    font-size: 14px;
+    color: aliceblue;
+    position: relative;
+    display: inline-block;
+
+}
+
+nav>ul>li>a:hover {
+    color: rgb(0, 204, 255);
+}
+
+nav>ul>li>a:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 204, 255);
+}
+
+/* ///////////////////////////// */
+.logo {
+    display: flex;
+    position: relative;
+    padding-right: 10%;
+    /* margin-left: 10%; */
+    width: 20%;
+}
+
+.logo>svg:first-child {
+    position: absolute;
+    top: -10px;
+    left: 49px;
+
+}
+
+.box1 {
+    height: 804px;
+    position: relative;
+}
+
+.icon {
+    border-radius: 50%;
+    background-color: rgba(6, 4, 18, 0.414);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 10px 20px;
+}
+
+.icon:hover path {
+    fill: rgb(0, 204, 255);
+}
+
+.box-contain {
+    position: absolute;
+    width: 60%;
+    left: 45%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+h1 {
+    font-weight: 100;
+    color: rgba(240, 248, 255, 0.913)
+}
+
+h1>strong {
+    font-weight: 900;
+    color: aliceblue;
+}
+
+p {
+    padding-top: 30px;
+    color: #ecf2f3;
+    font-weight: 100;
+    width: 600px;
+
+}
+
+.button-wrap {
+    display: flex;
+    padding-top: 35px;
+}
+
+button {
+    padding: 12px 0;
+    width: 200px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 3px solid #ecf2f3;
+    margin-right: 28px;
+    color: #ecf2f3;
+    z-index: 1;
+}
+
+button:hover {
+    background: var(--hovercolor);
+    border-color: var(--hovercolor);
+}
+
+.icon-wrap {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    color: #ecf2f3;
+    font-size: small;
+    position: absolute;
+    top: 460px;
+    right: 590px;
+}
+
+.scroll-icon {
+    display: flex;
+    position: absolute;
+    top: 330px;
+    left: 6%;
+    width: calc(1480px - 15%);
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 3;
+
+}
+
+.scroll-icon>div {
+    display: flex;
+    background-color: var(--hovercolor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.marker {
+    position: absolute;
+    bottom: 10px;
+    left: 48%;
+}
+
+.marker * {
+    margin-right: 10px;
+}
+
+/* BOX2 */
+/* /////////////////////////////////////////////////// */
+.box2 {
+    height: 580px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box2>h2 {
+    margin-top: 35px;
+    font-weight: 800;
+}
+
+.box2>h3 {
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.galary {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px;
+    justify-content: start;
+    margin: 10px;
+
+}
+
+.base {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--hovercolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card:hover .base {
+    background-color: rgb(76, 75, 75);
+}
+
+.card:hover :nth-child(2) {
+    color: var(--hovercolor);
+    font-weight: 900;
+}
+
+.card>p {
+    width: 100%;
+    color: #0000009b;
+
+}
+
+.card>div+div {
+    margin-bottom: 20px;
+}
+
+/* cection BLOCK3   GALARY*/
+/* /////////////////////////////////// */
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+   
+}
+
+.box3>h2 {
+    padding: 6px 0 0 0;
+
+}
+
+.box3>h3 {
+    padding: 0 0 50px 0;
+    font-weight: 100;
+}
+
+.box3-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.item {
+    height: 400px;
+    background-image: url(/bezinger/image.png);
+    background-position: start;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.item::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: var(--hovercolor);
+    border-radius: 8px 8px 0 0;
+    opacity: 0.15;
+
+}
+
+.item:hover::after {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+
+.item :first-child {
+    font-size: 50px;
+    font-weight: 900;
+    color: #ecf2f3;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(30% - 25px);
+    left: calc(50% - 25px);
+    opacity: 0;
+}
+
+.item:hover :first-child {
+    opacity: 1;
+    z-index: 3;
+}
+
+.item>h3 {
+    position: absolute;
+    top: calc(58% - 20px);
+    left: calc(50% - 90px);
+    color: var(--hovercolor);
+}
+
+.item :last-child {
+    padding-bottom: 10%;
+    color: #0000009e;
+}
+/* section BLOCK4 VIDEO */
+/* ///////////////////////////////////// */
+.box4 {
+    height: 550px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/bezinger/video_box_cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box4::after {
+    content: '';
+    background-color: var(--hovercolor);
+    opacity: 0.6;
+}
+
+.box4>img {
+    width: 6%;
+    margin-bottom: 25px;
+}
+
+.box4>h2 {
+    font-size: large;
+    width: 600px;
+}
+
+.box4>p {
+    display: inline-block;
+    width: 35%;
+    padding: 25px;
+    text-align: start;
+}
+
+/* BOX5 FORM */
+/* //////////////////////////////////////////// */
+.box5 {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/bezinger/Map.png);
+
+
+}
+
+/* FORM CONTACT */
+.box-form {
+    width: 25%;
+    height: 550px;
+    background-color: var(--hovercolor);
+    display: flex;
+    color: #ecf2f3;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px 0 10px 0;
+
+}
+.form-container {
+    height: 520px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+input::placeholder {
+    color: darkgray;
+}
+
+textarea {
+    padding: 25px 0 0 0;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 100px;
+}
+
+textarea::placeholder {
+    color: darkgray;
+}
+
+input[type="submit"] {
+    width: 70%;
+    background-color: rgb(68, 67, 67);
+    color: var(--hovercolor);
+    height: 55px;
+    font-size: large;
+    padding-top: 10px;
+}
+fieldset {
+    border: none;
+}
+
+/* FOOTER //////////////////////// */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(81, 79, 79);
+    color: rgba(156, 154, 154, 0.713);
+}
