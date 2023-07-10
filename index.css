@@ -19,7 +19,7 @@
 }
 
 .wrapper {
-    background-image: url(/bezinger/Base.png);
+    background-image: url(/Base.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,6 +81,8 @@ nav>ul>li>a:hover::after {
     padding-right: 10%;
     /* margin-left: 10%; */
     width: 20%;
+    /* border: 1px solid #000; */
+    
 }
 
 .logo>svg:first-child {
@@ -88,6 +90,9 @@ nav>ul>li>a:hover::after {
     top: -10px;
     left: 49px;
 
+}
+.logo>svg {
+    overflow: visible;
 }
 
 .box1 {
@@ -302,7 +307,7 @@ button:hover {
 
 .item {
     height: 400px;
-    background-image: url(/bezinger/image.png);
+    background-image: url(/image.png);
     background-position: start;
     background-size: contain;
     background-repeat: no-repeat;
@@ -369,7 +374,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/bezinger/video_box_cover.png);
+    background-image: url(/video_box_cover.png);
     background-position: center;
     background-size: cover;
 }
@@ -404,7 +409,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/bezinger/Map.png);
+    background-image: url(/Map.png);
 
 
 }
