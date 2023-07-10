@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/index.css">
+
 </head>
 
 <body>
@@ -178,7 +181,11 @@
             </div>
         </div>
         <div class="box4">
-            <img src="/video_icon.png" alt="">
+
+            <!-- <img src="/video_icon.png" alt=""> -->
+            <div class="play " data-bs-target="#exampleModal" data-bs-toggle="modal">
+                <div class="triangle"></div>
+            </div>
             <H1>Watch the best Technology in <strong>Action</strong> </H1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores inventore,
                 exercitationem
@@ -190,7 +197,7 @@
             <div class="box-form">
                 <span>Contact</span>
                 <form class="form-container">
-                    <fieldset class="form-wrapper" >
+                    <fieldset class="form-wrapper">
                         <input type="text" placeholder="Your Name">
                         <input type="email" placeholder="Your Email">
                         <input type="text" placeholder="Subject">
@@ -205,6 +212,52 @@
             <span>Copyright &copy; 2023 | bazinger | All Rights Reserved</span>
             <span>Terms of Service | Privacy Policy</span>
         </footer>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <style>
+                            .embed-container {
+                                position: relative;
+                                padding-bottom: 56.25%;
+                                height: 0;
+                                overflow: hidden;
+                                max-width: 100%;
+                            }
+
+                            .embed-container iframe,
+                            .embed-container object,
+                            .embed-container embed {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        </style>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//QBvFePuVpIE'
+                                frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
