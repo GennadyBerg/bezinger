@@ -6,7 +6,6 @@
 * {
     bottom: 0;
     margin: 0;
-    /* box-sizing: border-box; */
     text-decoration: none;
     list-style-type: none;
     font-family: 'Lato', sans-serif;
@@ -15,15 +14,12 @@
 .container {
     min-width: 1480px;
     max-width: 1480px;
-    /* margin: auto; */
+    margin: auto;
 
 }
 
 .wrapper {
-    background-image: url(/Base.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
     width: 100%;
     position: relative;
 }
@@ -34,11 +30,12 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    position: static;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(4, 7, 26, 0.346);
+    z-index: 3;
 
 }
 
@@ -50,7 +47,6 @@ nav {
 }
 
 nav>ul {
-    /* padding-left:15%; */
     display: flex;
     gap: 20px;
 }
@@ -84,10 +80,7 @@ nav>ul>li>a:hover::after {
     display: flex;
     position: relative;
     padding-right: 10%;
-    /* margin-left: 10%; */
     width: 20%;
-    /* border: 1px solid #000; */
-    
 }
 
 .logo>svg:first-child {
@@ -96,13 +89,17 @@ nav>ul>li>a:hover::after {
     left: 49px;
 
 }
+
 .logo>svg {
     overflow: visible;
 }
 
 .box1 {
-    height: 804px;
-    position: relative;
+    height: 450px;
+    width: 680px;
+    position: absolute;
+    left: 40%;
+    text-align: left;
 }
 
 .icon {
@@ -121,41 +118,39 @@ nav>ul>li>a:hover::after {
 }
 
 .box-contain {
-    position: absolute;
-    width: 60%;
-    left: 45%;
-    top: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: start;
 
 
 }
 
 h1 {
     font-weight: 100;
-    color: rgba(240, 248, 255, 0.913)
+    color: rgba(240, 248, 255, 0.624)
 }
 
 h1>strong {
-    font-weight: 900;
-    color: aliceblue;
+    font-weight: 600;
+    color: rgba(240, 248, 255, 0.818);
 }
 
 p {
-    padding-top: 28px;
+    padding-top: 20px;
     color: #ecf2f3;
     font-weight: 100;
-    width: 600px;
+    width: 650px;
+    font-size: smaller;
 
 }
 
 .button-wrap {
     display: flex;
-    padding-top: 30px;
+    padding-top: 28px;
 }
 
 button {
-    padding: 12px 0;
+    padding: 14px 0;
     width: 200px;
     border-radius: 8px;
     background-color: transparent;
@@ -177,43 +172,15 @@ button:hover {
     color: #ecf2f3;
     font-size: small;
     position: absolute;
-    top: 60%;
-    right: calc(40% - 6px);
+    top: 45%;
+    left: 0;
 }
-
-.scroll-icon {
-    display: flex;
-    position: absolute;
-    top: 330px;
-    left: 6%;
-    width: calc(1480px - 15%);
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    z-index: 3;
-
-}
-
-.scroll-icon>div {
-    display: flex;
-    background-color: var(--hovercolor);
+/* .carousel-control-next {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 
-}
-
-.marker {
-    position: absolute;
-    bottom: 10px;
-    left: 48%;
-}
-
-.marker * {
-    margin-right: 10px;
-}
+} */
 
 /* BOX2 */
 /* /////////////////////////////////////////////////// */
@@ -294,7 +261,7 @@ button:hover {
     align-items: center;
     height: 690px;
     flex-direction: column;
-   
+
 }
 
 .box3>h2 {
@@ -368,18 +335,17 @@ button:hover {
     top: calc(58% - 29px);
     left: calc(38% - 90px);
     color: var(--hovercolor);
-    
+
 }
 
 
 .item>span:last-child {
-    /* display: inline-block; */
     padding-top: 70px;
-    /* bottom: 0; */
     color: #0000009e;
     position: relative;
     top: 20px;
 }
+
 /* section BLOCK4 VIDEO */
 /* ///////////////////////////////////// */
 .box4 {
@@ -392,7 +358,7 @@ button:hover {
     background-image: url(/video_box_cover.png);
     background-position: center;
     background-size: cover;
-    
+
 }
 
 .box4::after {
@@ -416,7 +382,7 @@ button:hover {
     width: 45%;
     padding: 25px;
     text-align: start;
-    
+
 }
 
 .play {
@@ -431,11 +397,13 @@ button:hover {
     margin-bottom: 40px;
     transition: 0.5s;
 }
+
 .play:hover {
     border: 8px solid #f6f6f6;
     background-color: darkgreen;
 
 }
+
 .triangle {
     width: 0;
     height: 0;
@@ -474,6 +442,7 @@ button:hover {
     padding: 10px 0 10px 0;
 
 }
+
 .form-container {
     width: 90%;
     height: 520px;
@@ -521,6 +490,7 @@ input[type="submit"] {
     font-size: 20px;
     padding-top: 10px;
 }
+
 fieldset {
     border: none;
 }
