@@ -175,12 +175,31 @@ button:hover {
     top: 45%;
     left: 0;
 }
-/* .carousel-control-next {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
 
-} */
+.button-wrap1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.button-wrap1:hover {
+    background-color: var(--hovercolor);
+    
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.carousel-control-next:hover,.carousel-control-prev:hover {
+background-color: transparent;
+}
+
 
 /* BOX2 */
 /* /////////////////////////////////////////////////// */
